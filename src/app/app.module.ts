@@ -2,20 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {DropdownComponent, DatepickerComponent} from '../../../blumjs/blumjs';
+import {BlumModule} from '../../../blumjs/blumjs';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DropdownComponent,
-    DatepickerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule    
+    HttpModule,
+    BlumModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

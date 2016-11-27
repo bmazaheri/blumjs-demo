@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  private someDate: Date = new Date();
+  public someDate: Date = new Date();
 }
