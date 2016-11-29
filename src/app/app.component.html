@@ -1,9 +1,10 @@
 <h1>
   {{title}}
 </h1>
-<bl-dropdown>rrr</bl-dropdown>
+<bl-dropdown [items]="ditems">rrr</bl-dropdown>
 <div>
-    asd asdas as asf as as
+    rrrrrrrrrrrrrrrrrrrrrr
 </div>
-<bl-datepicker [(model)]="someDate"></bl-datepicker>
+<span *ngFor="let item of ditems">{{item.label}}</span>
+<bl-datepicker calendar="jalali" [(model)]="someDate"></bl-datepicker>
 {{someDate}}
